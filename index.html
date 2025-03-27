@@ -6,13 +6,15 @@
 </head>
 <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
+        <!-- AR Marker -->
         <a-marker preset="hiro">
-            <a-entity 
-                gltf-model="https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models/2.0/Duck/glTF/Duck.gltf"
-                position="0 1 0"
-                scale="5 5 5">
+            <!-- 3D Model -->
+            <a-entity gltf-model="https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models/2.0/Duck/glTF/Duck.gltf"
+                position="0 0 0" scale="0.5 0.5 0.5">
             </a-entity>
-        </a-marker> 
+        </a-marker>
+
+        <!-- Camera -->
         <a-entity camera></a-entity>
     </a-scene>
 </body>
